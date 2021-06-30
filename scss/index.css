@@ -99,6 +99,8 @@ header .header-inner .header__left--menu a:nth-of-type(3) {
 header .header-inner .header__right {
   height: 50px;
   width: 150px;
+  display: flex;
+  justify-content: space-between;
 }
 
 header .header-inner .header__right__button {
@@ -118,6 +120,19 @@ header .header-inner .header__right__button img {
 header .header-inner .header__right__button p {
   color: #fff;
   margin-top: 17px;
+}
+
+header .header-inner .header__right .bar {
+  display: none;
+  height: 30px;
+  width: 30px;
+}
+
+header .header-inner .header__right .bar > div {
+  width: 30px;
+  border: 1px solid #fff;
+  margin-top: 9px;
+  transition: .2s;
 }
 
 header.change {
@@ -140,6 +155,10 @@ header.change .header-inner .header__left--menu a {
   color: #333;
 }
 
+header.change .header-inner .header__right .bar > div {
+  border: 1px solid #333;
+}
+
 a {
   text-decoration: none;
 }
@@ -150,7 +169,7 @@ main {
 
 .fv {
   width: 100%;
-  z-index: -1;
+  position: relative;
 }
 
 .fv__visual__item {
@@ -165,10 +184,16 @@ main {
 }
 
 .fv h1 {
+  display: block;
+  writing-mode: vertical-rl;
   font-size: 34px;
+  font-weight: bold;
+  line-height: 2.5;
   color: #fff;
   position: absolute;
-  top: 360px;
+  bottom: 30%;
+  right: 20%;
+  letter-spacing: 0.2em;
   z-index: 2px;
 }
 

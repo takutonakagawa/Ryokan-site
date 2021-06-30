@@ -2,6 +2,57 @@
   body {
     width: 100%;
   }
+  header {
+    height: 60px;
+  }
+  header .header-inner {
+    padding-top: 10px;
+    height: 40px;
+  }
+  header .header-inner .header__left__white {
+    height: 30px;
+    width: 30px;
+  }
+  header .header-inner .header__left__white img {
+    height: 30px;
+    width: 30px;
+  }
+  header .header-inner .header__left__black {
+    height: 30px;
+    width: 30px;
+  }
+  header .header-inner .header__left__black img {
+    height: 30px;
+    width: 30px;
+  }
+  header .header-inner .header__left--menu {
+    display: none;
+  }
+  header .header-inner .header__left h1 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  header .header-inner .header__right {
+    width: 170px;
+  }
+  header .header-inner .header__right__button {
+    height: 40px;
+    width: 120px;
+  }
+  header .header-inner .header__right__button img {
+    margin: 12px;
+  }
+  header .header-inner .header__right__button p {
+    margin-top: 12px;
+  }
+  header .header-inner .header__right .bar {
+    display: block;
+    cursor: pointer;
+  }
+  .fv h1 {
+    right: 5%;
+    bottom: 5%;
+  }
   .sentence__img h2 {
     margin-right: 3%;
   }
@@ -21,6 +72,10 @@
   .contents__menu__img {
     width: 100%;
   }
+  .contents__menu__desc {
+    margin: auto;
+    width: 97%;
+  }
   .contents__menu__desc > h1 {
     margin-top: 30px;
     font-size: 30px;
@@ -34,7 +89,7 @@
     height: 40px;
   }
   .plans {
-    height: 1315px;
+    height: 1240px;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -42,6 +97,18 @@
   .plans ul {
     margin-top: 20px;
     display: block;
+    width: 97%;
+    min-width: 480px;
+    height: 1000px;
+  }
+  .plans ul li {
+    margin-bottom: 20px;
+  }
+  .plans ul li.plan {
+    width: 100%;
+  }
+  .plans ul li.plan img {
+    object-fit: cover;
   }
   .announce {
     height: 1100px;
@@ -88,9 +155,21 @@
     padding-left: 30px;
   }
   .access__wrapper__address__map {
-    margin-top: 30px;
+    margin-top: 60px;
   }
   .access__wrapper__address__map iframe {
     height: 350px;
+  }
+  footer .f-wrapper {
+    width: 70%;
+  }
+  footer .f-wrapper p {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .access {
+    height: 1200px;
   }
 }
