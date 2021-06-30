@@ -1,0 +1,118 @@
+
+@media screen and (max-width: 1024px){
+
+    body{
+    width: 100%;
+}
+
+
+.sentence__img{
+    h2{
+        margin-right: 3%;
+    }
+    p{
+        margin-right: 2%;
+    }
+}
+
+
+.contents{
+    margin-bottom: 40px;
+    &__menu{
+        display: block;
+        margin-top: 40px;
+        &:nth-of-type(1){
+            margin-top: 30px;
+        }
+        &__img{
+            width: 100%;
+        }
+        &__desc {
+            >h1{
+                margin-top: 30px;
+                font-size: 30px;
+                line-height: 45px;
+            }
+            >button{
+                display: block;
+                margin: 0 auto;
+                margin-top: 30px;
+                width: 150px;
+                height: 40px;
+            }
+        }
+    }
+}
+
+
+.plans{
+    height: 1315px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    ul{
+        margin-top: 20px;
+        display: block;
+    }
+}
+
+
+.announce{
+    height: 1100px;
+    &__wrapper{
+        height: 80%;
+        
+        &__lists{
+            height: 100%;
+            width: 100%;
+            ul{
+                display: block;
+                li{
+                    width: 100%;
+                    max-width: 1024px;
+                    .list-box{
+                        width: 100%;
+                        &__img{
+                            margin-top: 15px;
+                        }
+                        &__sen{
+                            margin-top: 15px;
+                            width: 80%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.access{
+    height: 1400px;
+    &__wrapper{
+        height: 100%;
+        &__address{
+            display: block;
+            width: 100%;
+            img{
+                width: 100%;
+                max-width: 800px;
+            }
+            &__sen{
+                padding-left: 30px;
+            }
+            &__map{
+                margin-top: 30px;
+                iframe{
+                    height: 350px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+}
